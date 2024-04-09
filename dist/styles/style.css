@@ -1,0 +1,27 @@
+/*! SASS #style main */
+/*! SASS #vendors _variable */
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Space+Mono:wght@700&display=swap");
+:root {
+  --body-color: #939CAA;
+  --primary-color: #FFBC0F;
+  --white-color: #FFFFFF;
+}
+
+/*! SASS #base reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: var(--white-color);
+}/*# sourceMappingURL=style.css.map */
