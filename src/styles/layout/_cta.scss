@@ -1,27 +1,3 @@
-/*! SASS #style main */
-/*! SASS #vendors _variable */
-@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css";
-@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Space+Mono:wght@700&display=swap");
-:root {
-  --body-color: #939CAA;
-  --primary-color: #FFBC0F;
-  --white-color: #FFFFFF;
-}
-
-/*! SASS #base reset */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-body {
-  margin: 0px;
-  padding: 0px;
-}
-
 .cta {
   padding: 10.2rem 11.45vw;
   background-color: #495567;
@@ -38,12 +14,14 @@ body {
     flex-direction: column;
   }
 }
+
 @media only screen and (max-width: 700px) {
   .cta {
     padding: 8.8rem 3.2rem;
   }
 }
-.cta > *:not(.cta__pattern) {
+
+.cta>*:not(.cta__pattern) {
   position: relative;
   z-index: 10;
 }
@@ -60,6 +38,7 @@ body {
     text-align: center;
   }
 }
+
 @media only screen and (max-width: 700px) {
   .cta__text {
     width: 100%;
@@ -67,6 +46,7 @@ body {
     margin-bottom: 4rem;
   }
 }
+
 .cta__download {
   display: flex;
 }
@@ -84,6 +64,7 @@ body {
     margin-right: 1.3rem;
   }
 }
+
 .cta__download-button {
   display: flex;
   align-items: center;
@@ -100,13 +81,16 @@ body {
     padding: 0.6rem 1.1rem;
     justify-content: space-between;
   }
+
   .cta__download-button--apple {
     width: 11.3rem;
   }
+
   .cta__download-button--google {
     width: 13rem;
   }
 }
+
 .cta__download-button:hover {
   opacity: 0.7;
 }
@@ -122,6 +106,7 @@ body {
     font-size: 2rem;
   }
 }
+
 .cta__download-text {
   font-family: "Space Mono", monospace;
   font-weight: 700;
@@ -138,6 +123,7 @@ body {
     font-size: 7px;
   }
 }
+
 .cta__download-text p:last-child {
   font-size: 2rem;
   letter-spacing: -0.89px;
@@ -149,6 +135,7 @@ body {
     font-size: 1.5rem;
   }
 }
+
 .cta__pattern {
   position: absolute;
   right: 0;
@@ -163,87 +150,3 @@ body {
     width: auto;
   }
 }
-.footer {
-  background-color: #333a44;
-  display: flex;
-  align-items: center;
-  padding: 3.5rem 11.45vw 2.5rem;
-  height: 9.6rem;
-}
-
-@media only screen and (max-width: 1100px) {
-  .footer {
-    padding: 3.5rem 4rem 2.5rem;
-  }
-}
-@media only screen and (max-width: 700px) {
-  .footer {
-    padding: 6.4rem 3.2rem 8rem;
-    height: auto;
-    flex-direction: column;
-    text-align: center;
-  }
-}
-.footer__logo {
-  width: 10.8rem !important;
-}
-
-.footer__nav {
-  margin-left: 6rem;
-  flex: 1;
-}
-
-@media only screen and (max-width: 700px) {
-  .footer__nav {
-    margin: 4.2rem 0 7rem;
-    display: flex;
-    flex-direction: column;
-  }
-}
-.footer__nav-link {
-  text-decoration: none;
-  color: #939CAA;
-  font-family: "Space Mono", monospace;
-  font-weight: 700;
-  transition: all 0.6s;
-}
-
-.footer__nav-link:hover {
-  color: #fcb72b;
-}
-
-.footer__nav-link:not(:last-child) {
-  margin-right: 3.2rem;
-}
-
-@media only screen and (max-width: 700px) {
-  .footer__nav-link:not(:last-child) {
-    margin-right: 0;
-    margin-bottom: 1.6rem;
-  }
-}
-.footer__social {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 12rem;
-}
-
-.footer__social-icon {
-  width: 2.4rem;
-  height: 2.4rem;
-  fill: #fcb72b;
-  transition: all 0.5s;
-}
-
-.footer__social-icon--small {
-  height: 1.95rem;
-}
-
-.footer__social-icon:hover {
-  fill: #fff;
-}
-
-body {
-  background-color: var(--white-color);
-}/*# sourceMappingURL=style.css.map */
