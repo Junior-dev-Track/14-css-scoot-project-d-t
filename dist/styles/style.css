@@ -201,12 +201,6 @@ body {
     display: block;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 :root {
   --orange: #fcb72b;
 }
@@ -258,20 +252,16 @@ main .intro .intro-content .intro-container .intro-text {
   text-align: justify;
 }
 
-main .intro .intro-content .intro-container .intro-line {
-  position: absolute;
-}
-
-main .intro .intro-content .intro-container .intro-line {
+main .intro .intro-line {
   position: absolute;
   left: -200px;
-  top: 260px;
+  top: 280px;
 }
 
-main .intro .intro-content .intro-container .intro-arrow {
+main .intro .intro-arrow {
   position: absolute;
   left: 570px;
-  top: 260px;
+  top: 280px;
 }
 
 main .intro .intro-content .intro-btn {
@@ -294,9 +284,8 @@ main .intro .intro-content .intro-btn {
 
 .section-main .one-container {
   display: flex;
-  height: 291px;
   width: 1275px;
-  padding-bottom: 130px;
+  padding-bottom: 110px;
 }
 
 .section-main .one-container .card-container {
@@ -321,13 +310,16 @@ main .intro .intro-content .intro-btn {
 }
 
 .section-main .contain {
-  margin: 60px 0;
+  margin: 70px 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   width: 1475px;
   height: 445px;
   position: relative;
+}
+
+.section-main .contain .side {
+  margin-right: 300px;
 }
 
 .section-main .contain .side .title-section {
@@ -340,7 +332,6 @@ main .intro .intro-content .intro-btn {
 }
 
 .section-main .contain .side .scoot-text {
-  height: 100px;
   width: 445px;
   font-size: 15px;
   line-height: 25px;
@@ -372,12 +363,32 @@ main .intro .intro-content .intro-btn {
   border-radius: 50%;
 }
 
-.section-main .contain .main-img .container-img .left-downward-arrow {
+.section-main .contain .main-img .left-downward-arrow {
   position: absolute;
-  top: 200px;
-  right: 550px;
+  bottom: 30px;
+  right: 0;
   height: 99.37px;
   width: 734.28px;
+}
+
+.three-container .container-img {
+  margin-right: 300px;
+}
+
+.three-container .left-short-arrow {
+  height: 99.37px;
+  position: absolute;
+  transform: translateX(-100px);
+  top: 0;
+  left: 0;
+}
+
+.four-container .main-img .right-short-arrow {
+  position: absolute;
+  transform: translateX(40px);
+  height: 99.37px;
+  top: 90px;
+  right: 0;
 }
 
 .cta {
@@ -604,4 +615,5 @@ main .intro .intro-content .intro-btn {
 
 body {
   background-color: var(--white-color);
+  overflow-x: hidden;
 }/*# sourceMappingURL=style.css.map */
