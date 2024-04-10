@@ -89,7 +89,6 @@ main .intro .intro-content .intro-btn {
 
 .section-main .one-container {
   display: flex;
-  // height: 291px;
   width: 1275px;
   padding-bottom: 110px;
 }
@@ -197,4 +196,27 @@ main .intro .intro-content .intro-btn {
   height: 99.37px;
   top: 90px;
   right: 0;
+}
+
+@media screen and (max-width: 768px) {
+
+  main .intro {
+    width: 573px;
+    // text-align: center;
+  }
+
+  main .intro .intro-content .head-intro {
+    text-align: center;
+    width: 573px;
+  }
+
+  main .intro .intro-content .intro-container .intro-text {
+    text-align: center;
+    width: 573px;
+    margin: 0;
+  }
+
+  main .intro .intro-line {
+    display: none;
+  }
 }

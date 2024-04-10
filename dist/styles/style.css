@@ -529,6 +529,23 @@ main .intro .intro-content .intro-btn {
   right: 0;
 }
 
+@media screen and (max-width: 768px) {
+  main .intro {
+    width: 573px;
+  }
+  main .intro .intro-content .head-intro {
+    text-align: center;
+    width: 573px;
+  }
+  main .intro .intro-content .intro-container .intro-text {
+    text-align: center;
+    width: 573px;
+    margin: 0;
+  }
+  main .intro .intro-line {
+    display: none;
+  }
+}
 .features {
   padding: 0 11.45vw 12rem;
 }
