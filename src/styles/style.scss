@@ -13,6 +13,8 @@
 // all components
 //@import "./components/_nameFile.scss";
 @import "./components/_button.scss";
+@import "./components/_faq.scss";
+@import "./components/_accordion.scss";
 
 // layout
 
@@ -20,6 +22,8 @@
 
 @import "./layout/_header.scss";
 @import "./layout/_home.scss";
+@import "./layout/_features.scss";
+@import "./layout/_alternate-img-txt.scss";
 @import "./layout/_cta.scss";
 @import "./layout/_footer.scss";
 
@@ -30,4 +34,60 @@
 body {
   background-color: var(--white-color);
   overflow-x: hidden;
+}
+
+/**/
+.page-heading {
+  position: relative;
+  margin-bottom: 12.5rem;
+}
+
+@media only screen and (max-width: 700px) {
+  .page-heading {
+    margin-bottom: 8rem;
+  }
+}
+
+.page-heading__bg {
+  width: 100%;
+}
+
+.page-heading__container {
+  position: absolute;
+  left: 11.45vw;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 1100px) {
+  .page-heading__container {
+    left: 12.6vw;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .page-heading__container {
+    left: 0;
+    justify-content: center;
+  }
+}
+
+.page-heading__heading {
+  color: #fff;
+}
+
+.page-heading__circles {
+  width: 23.4rem;
+  transform: translateX(13.25%);
+}
+
+@media only screen and (max-width: 700px) {
+  .page-heading__circles {
+    display: none;
+  }
 }
