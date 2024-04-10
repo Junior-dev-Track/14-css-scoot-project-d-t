@@ -1,0 +1,18 @@
+.btn {
+  text-decoration: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1.4rem 4rem;
+  font-family: "Space Mono", monospace;
+  border: 3px solid var(--primary-color);
+  transition: color 0.35s, background-color 0.7s;
+}
+
+.btn--wide {
+  padding: 1.4rem 6.7rem;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
