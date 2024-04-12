@@ -1177,7 +1177,7 @@ main .intro .intro-content .intro-btn {
   fill: #fff;
 }
 
-main {
+main.careers {
   margin: 0 100px;
   font-family: "Space mono", sans-serif;
 }
