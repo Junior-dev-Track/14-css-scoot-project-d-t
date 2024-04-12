@@ -10,6 +10,14 @@
 
 .features__heading {
   margin-bottom: 10rem;
+
+  font-family: Space Mono;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -2.142857074737549px;
+  text-align: center;
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -67,12 +75,18 @@
   left: 50%;
   transform: translateX(-50%);
   background-color: #fcb72b;
-  padding: 3.4rem;
-  width: 9.6rem;
-  height: 9.6rem;
+  padding: 2rem;
+  width: 5.6rem;
+  height: 5.6rem;
   border-radius: 50%;
 }
 
 .features__title {
   margin-bottom: 2.7rem;
+}
+
+.features p {
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--body-color);
+  line-height: 1.667;
 }
