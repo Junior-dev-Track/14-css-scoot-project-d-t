@@ -616,11 +616,12 @@ main .intro .intro-content .intro-btn {
   right: 0;
 }
 
+/* RESPONSIVE CORRECTION BUG*/
 @media screen and (max-width: 768px) {
   main .intro {
     width: 573px;
     left: 100px;
-    top: 13%;
+    top: 16%;
   }
   main .intro .intro-content {
     height: 350px;
@@ -628,7 +629,6 @@ main .intro .intro-content .intro-btn {
   main .intro .intro-content .head-intro {
     text-align: center;
     width: 573px;
-    margin: 20px 0;
   }
   main .intro .intro-content .intro-container {
     width: 573px;
@@ -650,12 +650,14 @@ main .intro .intro-content .intro-btn {
     top: 380px;
   }
   .section-main {
-    margin: 110px 80px 30px 80px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
   .section-main .one-container {
     flex-direction: column;
-    text-align: center;
-    width: 100%;
+    width: 85%;
     padding-bottom: 0;
   }
   .section-main .one-container .card-container {
@@ -675,33 +677,44 @@ main .intro .intro-content .intro-btn {
     text-align: left;
   }
   .section-main-two {
-    display: flex;
-    flex-direction: column;
+    width: 90%;
   }
-  .section-main .contain {
-    flex-direction: column-reverse;
-    margin-top: 20px;
+  .section-main-two .two-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
   }
-}
-/* RESPONSIVE CORRECTION BUG*/
-@media screen and (max-width: 768px) {
-  main .intro {
-    left: 0px;
+  .main-img {
+    grid-row: 1;
   }
-  main .intro .intro-content .head-intro {
-    font-size: 2.5rem;
-    width: 400px;
+  .two-left {
+    grid-row: 2;
   }
-  main .intro .intro-content .intro-container .intro-text {
-    width: 400px;
-  }
-  .section-main .contain {
-    margin: 0px;
+  .section-main-two .contain {
+    margin-bottom: 50px;
     display: grid;
     align-items: center;
     width: auto;
     height: auto;
     position: relative;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .section-main .contain .side {
+    margin: 0;
+  }
+  .section-main .contain .side .learn-more {
+    position: absolute;
+    left: 23%;
+  }
+  .section-main-two .three-container {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .section-main-two .two-container .two-left .side {
+    margin: 0 auto;
   }
   .left-downward-arrow,
   .left-short-arrow,
@@ -709,23 +722,6 @@ main .intro .intro-content .intro-btn {
     display: none;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-  main .img-intro img {
-    width: auto;
-  }
-}
-@media screen and (max-width: 400px) {
-  main .intro {
-    width: 573px;
-    left: 0px;
-  }
-}
-.section-main .one-container {
-  display: flex;
-  align-items: center;
-  padding-bottom: 110px;
-}
-
 .features {
   padding: 0 11.45vw 12rem;
 }
