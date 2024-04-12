@@ -598,6 +598,56 @@ main .intro .intro-content .intro-btn {
     margin-top: 20px;
   }
 }
+/* RESPONSIVE CORRECTION BUG*/
+.section-main {
+  margin: 5rem auto;
+  font-family: "Space mono", sans-serif;
+  display: grid;
+  justify-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  main .intro {
+    left: 0px;
+  }
+  main .intro .intro-content .head-intro {
+    font-size: 2.5rem;
+    width: 400px;
+  }
+  main .intro .intro-content .intro-container .intro-text {
+    width: 400px;
+  }
+  .section-main .contain {
+    margin: 0px;
+    display: grid;
+    align-items: center;
+    width: auto;
+    height: auto;
+    position: relative;
+  }
+  .left-downward-arrow,
+  .left-short-arrow,
+  .right-short-arrow {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  main .img-intro img {
+    width: auto;
+  }
+}
+@media screen and (max-width: 400x) {
+  main .intro {
+    width: 573px;
+    left: 0px;
+  }
+}
+.section-main .one-container {
+  display: flex;
+  align-items: center;
+  padding-bottom: 110px;
+}
+
 .features {
   padding: 0 11.45vw 12rem;
 }
