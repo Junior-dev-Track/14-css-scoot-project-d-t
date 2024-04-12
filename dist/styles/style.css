@@ -1186,7 +1186,6 @@ main.careers {
   display: flex;
   align-items: center;
   width: 1475px;
-  height: 445px;
   position: relative;
 }
 
@@ -1373,6 +1372,47 @@ main.careers {
   text-decoration: none;
 }
 
+@media screen and (max-width: 768px) {
+  .contain {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .contain .container-img {
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
+  }
+  .contain .container-img img {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+  }
+  .contain .side {
+    margin: 0;
+  }
+  .contain .side .title-section {
+    font-size: 44px;
+    line-height: 44px;
+    letter-spacing: -2.14px;
+    font-weight: 700;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .contain .side .scoot-text {
+    width: 100%;
+  }
+  .join-us {
+    width: 100%;
+    margin: 50px 0;
+  }
+  .join-us .container-join-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 body {
   background-color: var(--white-color);
   overflow-x: hidden;
