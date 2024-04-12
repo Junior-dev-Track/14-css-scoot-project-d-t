@@ -84,6 +84,8 @@ main .intro .intro-content .intro-btn {
 
 .section-main {
   margin: 100px 165px;
+  // margin: 5rem auto;
+  width: 80%;
   font-family: 'Space mono', sans-serif;
 }
 
@@ -97,6 +99,18 @@ main .intro .intro-content .intro-btn {
 .section-main .one-container .card-container {
   width: 350px;
   margin-right: 30px;
+  position: relative;
+}
+
+.section-main .one-container .card-container::before {
+  content: "";
+  height: 10px;
+  width: 400px;
+  background: rgba(229, 236, 244, 1);
+  position: absolute;
+  top: 15%;
+  left: -90%;
+  z-index: -2;
 }
 
 .section-main .one-container .card-container .main-title {
@@ -286,18 +300,12 @@ main .intro .intro-content .intro-btn {
 
 /* RESPONSIVE CORRECTION BUG*/
 
-.section-main {
-  margin: 5rem auto;
-  font-family: 'Space mono', sans-serif;
-  display: grid;
-  justify-items: center;
-}
-
-
-
-.section-main .one-container {
-  //width: auto;
-}
+// .section-main {
+//   margin: 5rem auto;
+//   font-family: 'Space mono', sans-serif;
+//   display: grid;
+//   justify-items: center;
+// }
 
 @media screen and (max-width: 768px) {
   main .intro {
@@ -340,7 +348,7 @@ main .intro .intro-content .intro-btn {
   }
 }
 
-@media screen and (max-width:400x) {
+@media screen and (max-width: 400px) {
 
   .section-main {
     //margin: 5rem auto;
