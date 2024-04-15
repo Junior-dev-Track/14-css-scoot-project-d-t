@@ -1,5 +1,6 @@
 main.careers {
-  margin: 0 100px;
+  width: 90%;
+  margin: 0 auto;
   font-family: 'Space mono', sans-serif;
 }
 
@@ -16,7 +17,6 @@ main.careers {
 
 .contain .side .title-section {
   color: rgba(73, 85, 103, 1);
-  // height: 96px;
   width: 445px;
   font-size: 48px;
   line-height: 48px;
@@ -195,7 +195,6 @@ main.careers {
 @media screen and (max-width: 768px) {
 
   .careers {
-    margin: 0 auto !important;
     width: 90%;
   }
 
@@ -259,7 +258,7 @@ main.careers {
 @media screen and (max-width: 376px) {
 
   .careers {
-    width: 100%;
+    margin: 0 auto;
   }
 
   .contain {
@@ -268,8 +267,8 @@ main.careers {
   }
 
   .contain .container-img {
-    height: 100px;
-    width: 100px;
+    height: 300px;
+    width: 300px;
     border-radius: 50%;
   }
 
@@ -277,6 +276,10 @@ main.careers {
     height: 250px;
     width: 250px;
     border-radius: 50%;
+  }
+
+  .join-us h1 {
+    font-size: 32px;
   }
 
   .contain .side .title-section {
@@ -291,23 +294,20 @@ main.careers {
     line-height: 25px;
   }
 
+  .general-section-cards {
+    width: 100%;
+  }
+
   .general-section-cards .section-card {
     width: 100%;
-    // height: 190px;
     height: auto;
     flex-direction: column;
-
-    display: grid;
-    // grid-template-columns: 1fr;
-    // grid-template-rows: 1fr 1fr;
+    text-align: center;
+    margin-bottom: 20px;
   }
 
   .general-section-cards .section-card .infos {
-    // display: flex;
-    // display: block;
-    // grid-column-start: 1;
-    // grid-column-end: 2;
-    order: 1;
+    width: 100%;
   }
 
   .general-section-cards .section-card .infos .status {
@@ -319,10 +319,7 @@ main.careers {
   }
 
   .general-section-cards .section-card a {
-    // width: 100px;
-    // grid-column-start: 1;
-    // grid-column-end: 3;
-    order: 2;
+    width: 100%;
   }
 
 }
