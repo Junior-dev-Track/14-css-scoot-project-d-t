@@ -157,7 +157,6 @@ main.careers {
   justify-content: space-between;
   margin-bottom: 25px;
   padding: 0 25px;
-  // height: 128px;
 }
 
 .general-section-cards .section-card .infos {
@@ -208,25 +207,25 @@ main.careers {
   }
 
   .contain .container-img {
-    height: 450px;
-    width: 450px;
-    border-radius: 50%;
-  }
-
-  .contain .container-img img {
     height: 400px;
     width: 400px;
     border-radius: 50%;
   }
 
-  // .contain .main-img .left-downward-arrow {
-  //   position: absolute;
-  //   bottom: 0;
-  //   right: 0;
-  //   height: 100px;
-  //   left: -600px;
-  //   width: 734.28px;
-  // }
+  .contain .container-img img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+  }
+
+  .contain .main-img .left-downward-arrow {
+    position: absolute;
+    bottom: 0;
+    right: -50px;
+    top: 190px;
+    left: 0;
+    width: 734.28px;
+  }
 
   .contain .side {
     margin: 0;
@@ -257,7 +256,7 @@ main.careers {
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
 
   .careers {
     width: 100%;
@@ -275,8 +274,8 @@ main.careers {
   }
 
   .contain .container-img img {
-    height: 50px;
-    width: 50px;
+    height: 250px;
+    width: 250px;
     border-radius: 50%;
   }
 
@@ -294,21 +293,36 @@ main.careers {
 
   .general-section-cards .section-card {
     width: 100%;
-    height: 190px;
+    // height: 190px;
+    height: auto;
+    flex-direction: column;
+
+    display: grid;
+    // grid-template-columns: 1fr;
+    // grid-template-rows: 1fr 1fr;
   }
 
   .general-section-cards .section-card .infos {
     // display: flex;
-    display: block;
+    // display: block;
+    // grid-column-start: 1;
+    // grid-column-end: 2;
+    order: 1;
   }
 
   .general-section-cards .section-card .infos .status {
-    font-size: 1.125rem;
+    font-size: 24px;
   }
 
-  .general-section-cards .section-card .infos .country {}
+  .general-section-cards .section-card .infos .country {
+    font-size: 15px;
+  }
 
   .general-section-cards .section-card a {
-    width: 100%;
+    // width: 100px;
+    // grid-column-start: 1;
+    // grid-column-end: 3;
+    order: 2;
   }
+
 }

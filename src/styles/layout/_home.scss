@@ -179,11 +179,32 @@ main .intro .intro-content .intro-btn {
   height: 445px;
   width: 445px;
   border-radius: 50%;
+  position: relative;
 }
 
 .section-main .contain .container-img img {
   height: 445px;
   width: 445px;
+  border-radius: 50%;
+}
+
+.section-main .contain .main-img .demi-circle {
+  position: absolute;
+  top: 0;
+  left: -500px;
+  width: 445px;
+  height: 445px;
+  background: rgba(229, 236, 244, 1);
+  border-radius: 50%;
+}
+
+.section-main .contain .circle-right {
+  position: absolute;
+  top: 0;
+  right: -220px;
+  width: 445px;
+  height: 445px;
+  background: rgba(229, 236, 244, 1);
   border-radius: 50%;
 }
 
@@ -338,11 +359,11 @@ main .intro .intro-content .intro-btn {
     margin: 0 auto;
   }
 
-  .left-downward-arrow,
-  .left-short-arrow,
-  .right-short-arrow {
-    display: none;
-  }
+  // .left-downward-arrow,
+  // .left-short-arrow,
+  // .right-short-arrow {
+  //   display: none;
+  // }
 }
 
 
