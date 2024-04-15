@@ -85,7 +85,7 @@ main .intro .intro-content .intro-btn {
 .section-main {
   // margin: 100px 165px;
   // margin: 5rem auto;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   font-family: 'Space mono', sans-serif;
 }
@@ -100,7 +100,8 @@ main .intro .intro-content .intro-btn {
 }
 
 .section-main .one-container .card-container {
-  width: 350px;
+  // width: 350px;
+  width: 90%;
   margin-right: 30px;
   position: relative;
 }
@@ -214,6 +215,7 @@ main .intro .intro-content .intro-btn {
   right: 0;
   height: 99.37px;
   width: 734.28px;
+  z-index: 10;
 }
 
 .three-container .container-img {
@@ -235,6 +237,7 @@ main .intro .intro-content .intro-btn {
   height: 99.37px;
   top: 90px;
   right: 0;
+  z-index: 10;
 }
 
 @media screen and (max-width: 768px) {
@@ -247,16 +250,19 @@ main .intro .intro-content .intro-btn {
   }
 
   main .intro .intro-content {
-    height: 350px;
+    // height: 350px;
+    width: 100%;
   }
 
   main .intro .intro-content .head-intro {
     text-align: center;
-    width: 573px;
+    width: 80%;
+    // width: 573px;
   }
 
   main .intro .intro-content .intro-container {
-    width: 573px;
+    // width: 573px;
+    width: 70%;
     margin-bottom: 45px;
   }
 
@@ -280,9 +286,10 @@ main .intro .intro-content .intro-btn {
   }
 
   .section-main {
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
   }
 
@@ -304,6 +311,26 @@ main .intro .intro-content .intro-btn {
     height: 96px;
     width: 96px;
     margin-right: 30px;
+  }
+
+  .section-main .contain .main-img .demi-circle {
+    position: absolute;
+    top: 0;
+    left: -450px;
+    width: 445px;
+    height: 445px;
+    background: rgba(229, 236, 244, 1);
+    border-radius: 50%;
+  }
+
+  .section-main .contain .circle-right {
+    position: absolute;
+    top: 0;
+    right: -450px;
+    width: 445px;
+    height: 445px;
+    background: rgba(229, 236, 244, 1);
+    border-radius: 50%;
   }
 
   .section-main .one-container .card-container .main-description {
@@ -367,24 +394,30 @@ main .intro .intro-content .intro-btn {
 }
 
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
 
   .home .intro {
     width: 100%;
-    left: -200px;
-    top: 0;
+    left: 0;
+    top: 100px;
   }
 
   .home .intro .intro-content .head-intro {
-    font-size: 40px;
+    font-size: 45px;
+    width: 90%;
+  }
+
+  main .intro .intro-content .intro-container {
+    width: 100%;
   }
 
   .home .intro .intro-content .intro-container .intro-text {
     font-size: 15px;
+    width: 80%;
   }
 
   .section-main {
-    width: 100%;
+    width: 90%;
   }
 
   .section-main .one-container {
@@ -393,9 +426,17 @@ main .intro .intro-content .intro-btn {
 
   .section-main .one-container .card-container {
     flex-direction: column;
+    // align-items: flex-start;
+  }
 
-    align-items: flex-start;
+  .section-main .contain .container-img {
+    height: 350px;
+    width: 350px;
+  }
 
+  .section-main .contain .container-img img {
+    height: 300px;
+    width: 300px;
   }
 
   .card-container img {
@@ -405,6 +446,16 @@ main .intro .intro-content .intro-btn {
 
   .section-main .one-container .card-container::before {
     display: none;
+  }
+
+  .section-main .contain .side .title-section {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .section-main .contain .side .scoot-text {
+    font-size: 15px;
+    line-height: 25px;
   }
 
 }
