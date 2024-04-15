@@ -371,21 +371,19 @@ main .intro .intro-content .intro-btn {
   }
 
   .section-main .one-container .card-container {
-    display: block;
     flex-direction: column;
-    /* Affichez les éléments en colonne */
+
     align-items: flex-start;
-    /* Alignez les éléments à gauche */
+
   }
 
   .card-container img {
     margin-bottom: 0;
-    /* Supprimez l'espace sous l'image */
+
   }
 
   .section-main .one-container .card-container::before {
     display: none;
-
   }
 
 }

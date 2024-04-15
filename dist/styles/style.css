@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*! SASS #style main */
 /*! SASS #vendors _variable */
 @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css";
@@ -742,15 +741,11 @@ main .intro .intro-content .intro-btn {
     max-width: 100%;
   }
   .section-main .one-container .card-container {
-    display: block;
     flex-direction: column;
-    /* Affichez les éléments en colonne */
     align-items: flex-start;
-    /* Alignez les éléments à gauche */
   }
   .card-container img {
     margin-bottom: 0;
-    /* Supprimez l'espace sous l'image */
   }
   .section-main .one-container .card-container::before {
     display: none;
