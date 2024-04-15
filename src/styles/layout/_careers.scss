@@ -190,6 +190,14 @@ main.careers {
   text-align: center;
   padding: 14px 67px;
   text-decoration: none;
+  transition: 0.4s ease;
+  border: 2px solid var(--orange);
+}
+
+.general-section-cards .section-card a:hover {
+  color: var(--orange);
+  // border: 2px solid var(--orange);
+  background: inherit;
 }
 
 @media screen and (max-width: 768px) {
